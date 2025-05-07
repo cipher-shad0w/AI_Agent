@@ -1,0 +1,29 @@
+# AI Agent Configuration
+
+# General settings
+log_level: INFO
+auto_discover: true  # Automatically discover modules when no pipeline is specified
+
+# Modules to preload at startup
+preload_modules:
+  # Empty by default, add module names here to preload them
+  # - example_module
+
+# Module-specific configurations
+modules:
+  # Add module-specific configurations here
+  # example_module:
+  #   option1: value1
+  #   option2: value2
+
+# Pipeline definitions
+pipelines:
+  # Define pipelines as ordered lists of modules
+  default:
+    # Default pipeline is empty, will use auto_discover if enabled
+    []
+  
+  # Example custom pipeline
+  # custom_pipeline:
+  #   - module1
+  #   - module2
